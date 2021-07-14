@@ -1,7 +1,7 @@
 
 body{
-    margin: 5% 6% 0% 5%
-
+    margin: 5% 6% 0% 5%;
+    font-family: muli, sans-serif;
 }
 
 .headBar{
@@ -36,6 +36,14 @@ h2{
     
     
 }
+
+#more:hover ,#searchIcon:hover{
+    background-color: white;
+
+}
+#more:focus,#searchIcon:focus{
+    background-color: rgba(246,243,248,255);
+}
 #searchIcon, #more{
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
@@ -68,10 +76,15 @@ h2{
     text-align: center;
     line-height: 56px;  
 }
-
+#addTask:hover,#saveTask:hover{
+    background-color: #9c71ce;
+}
+#saveTask:focus,#saveTask:focus{
+    background-color: rgb(72,16,114);
+}
 #saveTask{
     color: white;
-    background-color: rgba(72,16,114,255);
+    background-color: rgb(72,16,114);
     border-radius: 50%;
     position: fixed;
     bottom: 40%;
@@ -101,4 +114,12 @@ h2{
     position: fixed;
     bottom: 38.55%;
     
+    }
+
+    #taskText:focus { 
+    outline: none !important;
+    box-shadow: 0 0 10px rgb(98, 56, 131);
+    color: rgb(36, 34, 31);
+    border:none ;
+
     }
