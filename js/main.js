@@ -6,7 +6,7 @@ const input=document.getElementById("name");
  button.addEventListener('click', function (e) { 
     e.preventDefault()
     if (input.value != "") {
- window.location.href="..\\html\\toDolists.html"
+        window.location.href="..\\html\\toDolists.html"
 
   let name = input.value
 alert(`hello ${name}`);
