@@ -7,15 +7,12 @@ function hideFab() {
     addTaskButton[0].style.display = "none";
   }
 }
-function realTime() {
-  const date = new Date();
-  const dateHour = date.getHours();
-  const dateMin = date.getMinutes();
-  const dateSec = date.getSeconds();
-  return `${dateHour}:${dateMin}:${dateSec}`;
+
+function setId(){
+    return localStorage.length + 1
 }
 
 function saveToLocal() {
   const taskContent = document.querySelector("#taskText").value;
-  return localStorage.setItem(realTime(), taskContent);
+  return localStorage.setItem(setId(), taskContent);
 }
