@@ -72,8 +72,10 @@ body {
     height: 56px;
     text-align: center;
     line-height: 56px;
+    
   }
-  
+  .writeTasks,.search,.properties{display:none};
+
   #addTask:hover,
   #saveTask:hover {
     background-color: #9c71ce;
@@ -101,6 +103,7 @@ body {
   }
   
   #taskText {
+
     width: 65%;
     height: 80px;
   
@@ -117,6 +120,7 @@ body {
   
     position: fixed;
     bottom: 20%;
+
   }
   
   #taskText:focus {
@@ -189,6 +193,8 @@ body {
   
     text-align: center;
   }
+  .writeTasks,.search,.properties{display:none};
+
   .properties div {
     margin-right: 25%;
   }
