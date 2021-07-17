@@ -1,8 +1,20 @@
-const writeTasks=document.getElementsByClassName('writeTasks')
-writeTasks[0].style.display = "none";
 
-const search=document.getElementsByClassName('search')
-search[0].style.display = "none";
 
-const properties=document.getElementsByClassName('properties')
-properties[0].style.display = "none";
+ const button=document.getElementById("startButton");
+const input=document.getElementById("name");
+
+ button.addEventListener('click', function (e) { 
+    e.preventDefault()
+    if (input.value != "") {
+        window.location.href = '../html/toDoLists.html'
+
+  let name = input.value
+alert(`hello ${name}`);
+   } 
+    else {
+        alert("Please enter a name");
+    }
+});
+
+
+
