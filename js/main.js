@@ -15,7 +15,7 @@ function setId() {
 function saveToLocal() {
   const taskContent = document.querySelector("#taskText").value;
   localStorage.setItem(setId(), taskContent);
-  let localKeys = Object.keys(localStorage);
+  var localKeys = Object.keys(localStorage);
   localKeys.sort(function (a, b) {
     return a - b;
   });
