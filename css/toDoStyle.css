@@ -211,6 +211,7 @@ h4 {
 .to-do-card {
   margin-bottom: 1rem;
   display: flex;
+  
   justify-content: space-between;
 }
 .to-do-selector {
@@ -224,4 +225,5 @@ h4 {
   border: 1px solid rgb(182, 182, 182);
   padding: 0.5rem;
   border-radius: 8px;
+  font-size: 1rem;
 }

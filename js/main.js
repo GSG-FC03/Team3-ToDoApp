@@ -3,7 +3,7 @@ const button = document.getElementById("startButton");
 const input = document.getElementById("name");
 const Sayhello = document.querySelector(".headBar");
 const Editinput = document.querySelector("#editPlace");
-//toDoContainer.addEventListener("click", Checkelement);
+toDoContainer.addEventListener("click", Checkelement);
 document.addEventListener("DOMContentLoaded", displayToDo);
 
 button.addEventListener("click", function (e) {
@@ -26,6 +26,7 @@ button.addEventListener("click", function (e) {
     alert("Please enter a name");
   }
 });
+
 //const search = document.getElementsByClassName("search");
 //search[0].style.display = "none";
 // Function to disply the text area and hide the FAB button
@@ -75,14 +76,9 @@ function displayToDo() {
     const toDoCard = document.createElement("div");
     toDoCard.classList.add("to-do-card");
     // toDoCard.innerHTML = content;
-    //                                                                      //  console.log("555",toDoCard);
+    //                                                                  //  console.log("555",toDoCard);
 
-    // adding p tag with class name (.to-do-card-stick) to the new div container which has the class name (.to-do-card)
     content = localStorage.getItem(localStorage.key(i));
-
-    const toDoCardStick = document.createElement("p");
-    toDoCardStick.classList.add("to-do-card-stick");
-    toDoCardStick.innerHTML = content;
 
     // adding checkbox input with class name (.to-do-selector) to the new div container which has the class name (.to-do-card)
     const toDoSelector = document.createElement("INPUT");
@@ -91,14 +87,20 @@ function displayToDo() {
 
     toDoCard.classList.add("to-do-selector");
 
+    // adding p tag with class name (.to-do-card-stick) to the new div container which has the class name (.to-do-card)
+    const toDoCardStick = document.createElement("p");
+    toDoCardStick.classList.add("to-do-card-stick");
+    toDoCardStick.innerHTML = content;
+
+
     //  toDoCardStick.textContent= localStorage.getItem();
-    //document.querySelector(".to-do-container").appendChild(toDoCard);
+    document.querySelector(".to-do-container").appendChild(toDoCard);
     console.log("333", toDoCardStick);
-    toDoCard.appendChild(toDoCardStick);
     toDoCard.appendChild(toDoSelector);
+    toDoCard.appendChild(toDoCardStick);
   }
 }
-/* function Checkelement(element) {
+function Checkelement(element) {
   let targetElement = element.target;
    let value = targetElement.innerHTML;
   editOrDelete(value); 
@@ -127,4 +129,4 @@ function editOrDelete(lastVlaue) {
     }
   }); 
 }
- */
+ 
