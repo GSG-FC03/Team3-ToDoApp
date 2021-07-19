@@ -1,0 +1,481 @@
+@media only screen and (min-width: 320px) and (min-height: 489px) {
+  body {
+    margin: 5% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 16%;
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 7vw;
+    margin-top: 6.5%;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 5vw;
+
+    position: fixed;
+    top: 11%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 18%;
+  }
+  #addTask {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 375px) and (min-height: 489px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 18%;
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 7vw;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 5vw;
+
+    position: fixed;
+    top: 12%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (min-height: 812px) {
+  body {
+    margin: 5% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 11.5%;
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 7vw;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 5vw;
+
+    position: fixed;
+    top: 8%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 13%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 15%;
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 7vw;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 5vw;
+
+    position: fixed;
+    top: 10%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 18%;
+  }
+
+  #addTask {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 18%;
+  }
+  #searchIcon,
+  #more {
+    border-radius: 50%;
+    line-height: 22px;
+    transform: scale(1.2);
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 5vw;
+    margin-top: 4%;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 3vw;
+
+    position: fixed;
+    top: 13%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 22%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 35%;
+  }
+  #searchIcon,
+  #more {
+    border-radius: 50%;
+    line-height: 22px;
+    transform: scale(1.8);
+  }
+
+  #searchIcon {
+    margin-right: 5%;
+  }
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 6vw;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 4vw;
+
+    position: fixed;
+    top: 20%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px),
+  (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 15%;
+  }
+  #searchIcon,
+  #more {
+    border-radius: 50%;
+    line-height: 22px;
+    transform: scale(1.8);
+  }
+
+  #searchIcon {
+    margin-right: 5%;
+  }
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 6vw;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 4vw;
+
+    position: fixed;
+    top: 10%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 18%;
+  }
+
+  .to-do-card:first-child {
+    margin-top: 30% !important;
+  }
+  #addTask {
+    position: fixed;
+    bottom: 5rem;
+    right: 6rem;
+
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    transform: scale(2);
+  }
+}
+
+@media only screen and (min-width: 1154px) {
+  body {
+    margin: 0% 6% 0% 5%;
+    font-family: muli, sans-serif;
+  }
+
+  .pageHead {
+    width: 90%;
+    position: fixed;
+    top: 0;
+
+    padding-top: 5%;
+    height: 35%;
+  }
+
+  .to-do-card:first-child {
+    margin-top: 22% !important;
+  }
+
+  h1 {
+    flex-grow: 4;
+    color: rgba(72, 16, 114, 255);
+    font-size: 6vw;
+    margin-top: 3%;
+  }
+  h2 {
+    color: rgba(57, 57, 57, 255);
+    font-style: normal;
+    font-size: 4vw;
+
+    position: fixed;
+    top: 20%;
+  }
+  .line {
+    width: 100%;
+    border-left: 0.1px solid black;
+    height: 0.00001vw;
+    display: inline-block;
+    box-shadow: 5px 5px 2px 0.5px #888;
+
+    padding-right: 10%;
+    margin-left: -7%;
+
+    position: fixed;
+    top: 42%;
+  }
+
+  #searchIcon,
+  #more {
+    border-radius: 50%;
+    line-height: 22px;
+    transform: scale(2);
+  }
+  #addTask {
+    position: fixed;
+    bottom: 5rem;
+    right: 6rem;
+
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    transform: scale(2);
+  }
+  #saveTask {
+    margin-right: 2%;
+  }
+  #searchIcon {
+    margin-right: 5%;
+  }
+}
+
+/* This is media query for the main page :D */
+
+@media only screen and (min-width: 768px) {
+  .homeBody {
+    margin: 35% 6% 20% 5%;
+  }
+  .photo {
+    margin: 25% 0% 20% 35%;
+
+    transform: scale(2.3);
+
+    width: 1%;
+    height: 1%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .homeBody {
+    margin: 35% 6% 20% 5%;
+  }
+  .photo {
+    margin: 25% 0% 20% 40%;
+
+    transform: scale(2.5);
+
+    width: 1%;
+    height: 1%;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .homeBody {
+    margin: 10% 6% 20% 5%;
+  }
+
+  .photo {
+    text-align: center;
+    transform: scale(3);
+    margin: 20% 0% 15% 45%;
+    width: 10%;
+    height: 10%;
+  }
+}
