@@ -1,22 +1,33 @@
-const toDoContainer = document.querySelector("to-do-container");
-const button=document.getElementById("startButton");
-const input=document.getElementById("name");
-document.addEventListener("DOMContentLoaded",displayToDo);
+const toDoContainer = document.querySelector(".to-do-container");
+const button = document.getElementById("startButton");
+const input = document.getElementById("name");
+const Sayhello = document.querySelector(".headBar");
+const Editinput = document.querySelector("#editPlace");
+//toDoContainer.addEventListener("click", Checkelement);
+document.addEventListener("DOMContentLoaded", displayToDo);
 
-button.addEventListener('click', function (e) { 
-   e.preventDefault()
-   if (input.value != "") {
-       window.location.href = '../html/toDoLists.html'
+button.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (input.value != "") {
 
- let name = input.value
-alert(`hello ${name}`);
-  } 
-   else {
-       alert("Please enter a name");
-   }
+    
+    window.location.href = "../html/toDoLists.html";
+    var name = input.value;
+    const Hello = document.createElement("h1");
+    Hello.innerHTML =  "Hi" + " " + name;
+    console.log(Sayhello);
+    alert("hello")
+    Sayhello.appendChild(Hello);
+    
+   
+    // hello ${name}
+    
+  } else {
+    alert("Please enter a name");
+  }
 });
-const search = document.getElementsByClassName("search");
-search[0].style.display = "none";
+//const search = document.getElementsByClassName("search");
+//search[0].style.display = "none";
 // Function to disply the text area and hide the FAB button
 function hideFab() {
   if ((writeTasks[0].style.display = "none")) {
@@ -25,11 +36,7 @@ function hideFab() {
   }
 }
 
-
-
-
-
-// Get te Length of local storage + 1 as a key number
+// Get the Length of local storage + 1 as a key number
 function setId() {
   return localStorage.length + 1;
 }
@@ -42,77 +49,82 @@ function saveToLocal() {
     return a - b;
   });
 
-  
-  // let a = document.createElement("p");
-  // a.classList.add("to-do-card-stick");
-  
-  
-  // const toDoSelector = document.createElement("input")
-  // toDoCard.classList.add("to-do-selector");
-
-// console.log(localStorage.getItem(4));
-// let content = localStorage.getItem(3);
-// console.log(content);
-// a.innerHTML = content;
-// body.appe
-                              // document.querySelector(".to-do-container").appendChild(a);
-// toDoContainer.appendChild(a);
-
-const toDoCard = document.createElement("div");
+  const toDoCard = document.createElement("div");
   toDoCard.classList.add("to-do-card");
-  
+
   let newContent = localStorage.getItem(localStorage.length);
   const toDoCardStick = document.createElement("p");
   toDoCardStick.classList.add("to-do-card-stick");
   toDoCardStick.innerHTML = newContent;
 
+  const toDoSelector = document.createElement("input");
+  toDoCard.classList.add("to-do-selector");
+  toDoSelector.type = "checkbox";
 
-const toDoSelector = document.createElement("input");
-toDoCard.classList.add("to-do-selector");
-toDoSelector.type = "checkbok";
+  console.log(newContent);
 
-console.log(newContent);
-
-document.querySelector(".to-do-container").appendChild(toDoCard);
-console.log("333",toDoCardStick);
-   toDoCard.appendChild(toDoCardStick); 
-     toDoCard.appendChild(toDoSelector)
+  document.querySelector(".to-do-container").appendChild(toDoCard);
+  console.log("333", toDoCardStick);
+  toDoCard.appendChild(toDoCardStick);
+  toDoCard.appendChild(toDoSelector);
 }
 
-function displayToDo(){
-  let content
-for (let i =0; i<localStorage.length; i++){
-  const toDoCard = document.createElement("div");
-  toDoCard.classList.add("to-do-card");
-  // toDoCard.innerHTML = content;
-  //                                                                      //  console.log("555",toDoCard);
+function displayToDo() {
+  let content;
+  for (let i = 0; i < localStorage.length; i++) {
+    const toDoCard = document.createElement("div");
+    toDoCard.classList.add("to-do-card");
+    // toDoCard.innerHTML = content;
+    //                                                                      //  console.log("555",toDoCard);
 
-  // adding p tag with class name (.to-do-card-stick) to the new div container which has the class name (.to-do-card)
-  content = localStorage.getItem(localStorage.key(i));
- 
+    // adding p tag with class name (.to-do-card-stick) to the new div container which has the class name (.to-do-card)
+    content = localStorage.getItem(localStorage.key(i));
 
-const toDoCardStick = document.createElement("p");
-  toDoCardStick.classList.add("to-do-card-stick");
-toDoCardStick.innerHTML = content;
+    const toDoCardStick = document.createElement("p");
+    toDoCardStick.classList.add("to-do-card-stick");
+    toDoCardStick.innerHTML = content;
 
-// adding checkbox input with class name (.to-do-selector) to the new div container which has the class name (.to-do-card)
-const toDoSelector = document.createElement("input");
-toDoCard.classList.add("to-do-selector");
-toDoSelector.type = "checkbok";
+    // adding checkbox input with class name (.to-do-selector) to the new div container which has the class name (.to-do-card)
+    const toDoSelector = document.createElement("INPUT");
+    //toDoSelector.type = "checkbox";
+    toDoSelector.setAttribute("type", "checkbox");
 
+    toDoCard.classList.add("to-do-selector");
 
-//  toDoCardStick.textContent= localStorage.getItem();
-document.querySelector(".to-do-container").appendChild(toDoCard);
-console.log("333",toDoCardStick);
-   toDoCard.appendChild(toDoCardStick); 
-     toDoCard.appendChild(toDoSelector);
+    //  toDoCardStick.textContent= localStorage.getItem();
+    //document.querySelector(".to-do-container").appendChild(toDoCard);
+    console.log("333", toDoCardStick);
+    toDoCard.appendChild(toDoCardStick);
+    toDoCard.appendChild(toDoSelector);
   }
 }
+/* function Checkelement(element) {
+  let targetElement = element.target;
+   let value = targetElement.innerHTML;
+  editOrDelete(value); 
+}
 
-// localStorage.getItem(localStorage.key(i))
 
+function editOrDelete(lastVlaue) {
+  
 
-
-
-
-
+  Editinput.value =lastVlaue ;
+  removeButton.addEventListener("click", function () {
+    for (var i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      var value = localStorage[key];
+      if (value ==lastVlaue) 
+      localStorage.removeItem(key);
+    }
+  }); 
+   const editPlace = document.getElementById("editPlace");
+  Edit.addEventListener("click", function () {
+    for (var i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      var value = localStorage[key];
+      if (value ==lastVlaue) 
+      localStorage.setItem(key, editPlace.value);
+    }
+  }); 
+}
+ */
