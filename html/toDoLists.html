@@ -13,13 +13,26 @@
 </head>
 
 <body>
+
+<div class="pageHead">
     <div class="headBar">
-        
-        <h1 id="todoHI"> </h1>
-        <a href="" id="more"><i class="fas fa-ellipsis-h"></i></a>
+
+         <h1 id="todoHI"> </h>
+        <a href="" id="searchIcon"><i class="fas fa-search "></i></a>
+         <a href="" id="more"><i class="fas fa-ellipsis-h"></i></a>
     </div>
+  
+    <section class="search">
+        <input type="text" id="searchText" name="searchText" placeholder="Search for note,color..." ><br>
+        <a href="" id="SearchIcon"><i class="fas fa-search"></i></a>
+        <a href="" id="CloseIcon"><i class="fas fa-times"></i></a>
+        <h4>cancel</h4>
+    </section>
+
     <h2 class="appMoto">Be active, be nice</h2>
     <div class="line"></div>
+</div>
+
     <section class="plus">
         <a href="#" id="addTask"><i class="fas fa-plus"></i></i></a>
     </section>
@@ -37,12 +50,14 @@
     </section>
     <section class="properties">
         <div class="delete">
+
             <a href="#" id="trash"><i class="fas fa-trash"></i></a>
             <h3>Delete</h3>
         </div>
 
         <div class="edit">
             <a href="#" id="pen"><i class="fas fa-pen"></i></a>
+
             <h3>Edit</h3>
         </div>
         <div><label for="editPlace">EditPlace:</label><br />
