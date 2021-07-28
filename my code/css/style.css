@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25%;
+}
+.welcome-title {
+  font-size: 1.5rem;
+  color: #242424;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.welcome-slogan {
+  font-size: 1rem;
+  color: #918c8c;
+  margin-top: 1rem;
+}
+.name-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.name-label {
+  margin: 0 1rem 0.75rem 1rem;
+  font-weight: 500;
+}
+#name-field {
+    outline: none;
+  border: solid 1px #949494;
+  width: 90%;
+  height: 40px;
+  margin: 0 1rem 4rem 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+#name-field:hover{
+  border: solid 1.5px #481072;
+  background-color: #fdfdfd;
+}
+
+.name-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  margin: 0rem 1rem 0 1rem;
+  background-color: #481072;
+  color: white;
+  border-radius: 4px;
+}
+.get-started {
+  font-size: 1rem;
+  font-weight: 700;
+}
