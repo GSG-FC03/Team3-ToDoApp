@@ -258,6 +258,7 @@ h3 {
 .to-do-card {
   margin-bottom: 1rem;
   display: flex;
+  
   justify-content: space-between;
 }
 
@@ -276,4 +277,5 @@ h3 {
   border: 1px solid rgb(182, 182, 182);
   padding: 0.5rem;
   border-radius: 8px;
+  font-size: 1rem;
 }
